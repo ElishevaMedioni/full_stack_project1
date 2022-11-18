@@ -1,40 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        .grid-container {
-    display: grid;
-    grid-template-areas:
-      "starters dishes"
-      "desserts shabbat";
-    grid-gap: 10px;
-    padding: 10px; 
-  }
-
-.row1 {
-    display: flex;
-}
-
-.row2 {
-    display: flex;
-}
-
-.column {
-    flex: 50%;
-    padding: 5px;
-    border: black solid 1px;
-    margin: 3px;
-}
-    </style>
     <head>
-        <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
-        
+        <link rel="stylesheet" href="styles.css"> 
     </head>
     <body>
         <header>
-            <h1>My Website</h1>
+            <h1>FairyFood</h1>
         </header>
         <main>
-            <div class="mainmenu">
+            <div class="navbar">
                 <nav>
                     <ul>
                         <li><a href="mainpage.html">Home</a></li>
@@ -44,33 +18,44 @@
                 </nav>
             </div>
 
-
-            <div class="row1">
-                <div class="column">
-                  <img src="startermenu.jpg" alt="html_css" style="width:100%">
+            
+            <div class="parent">
+                <div class="child">
+                  <figure>
+                    <img src="startermenu2.jpg" alt="starter">
+                    <figcaption>Starters</figcaption>
+                  </figure>
                 </div>
-                <div class="column">
-                  <img src="startermenu.jpg" alt="javascript" style="width:100%">
+                <div class="child">
+                  <figure>
+                    <img src="dishesmenu.jpg" alt="dishes">
+                    <figcaption>Dishes</figcaption>
+                  </figure>
+                </div>
+                <div class="child">
+                  <figure>
+                    <img src="dessertmenu.jpg" alt="desserts">
+                    <figcaption>Desserts</figcaption>
+                  </figure>
+                </div>
+                <div class="child">
+                  <figure>
+                    <img src="shabbatmenu.jpg" alt="shabbat">
+                    <figcaption>Shabbat</figcaption>
+                  </figure>
                 </div>
             </div>
 
-            <div class="row2">
-                <div class="column">
-                  <img src="startermenu.jpg" alt="nodejs" style="width:100%">
-                </div>
-                <div class="column">
-                  <img src="startermenu.jpg" alt="react" style="width:100%">
-                </div>
-            </div>
-
+            <!--
             <div class="grid-container">
                 <h2>Categories</h2>
+
                 <div class="starters">
                     <h2>
                         <a
                           href="category1.html"
                           target="_blank"
-                        ><img src="startermenu.jpg" alt="Starters" style="width:100%">
+                        ><img src="startermenu2.jpg" alt="Starters">
                         Starters</a
                         >
                       </h2>
@@ -81,7 +66,7 @@
                         <a
                           href="category2.html"
                           target="_blank"
-                        ><img src="dishesmenu.jpg" alt="Starters" style="width:100%">
+                        ><img src="dishesmenu.jpg" alt="Dishes" >
                         Dishes</a
                         >
                       </h2>
@@ -91,7 +76,7 @@
                         <a
                           href="category3.html"
                           target="_blank"
-                        >
+                        ><img src="dessertmenu.jpg" alt="Desserts" >
                         Desserts</a
                         >
                       </h2>
@@ -101,17 +86,17 @@
                         <a
                           href="category4.html"
                           target="_blank"
-                        >
+                        ><img src="shabbatmenu.jpg" alt="Shabbat" >
                         Shabbat</a
                         >
                       </h2>
                 </div>
                
             </div>
-
+            -->
         </main>
         <footer>
-            <p>My Website &copy; 2018</p>
+            <p>FairyFood &copy; 2022</p>
         </footer>
 
 
