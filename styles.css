@@ -137,7 +137,7 @@ footer {
    margin: 10px;
 }
 
-.receipeimg{
+.recipeimg{
 
   width:230px;
   height: 230px;
@@ -154,11 +154,11 @@ article {
   margin: 30px;
 }
 
-.listofreceipes {
+.listofrecipes {
   color: white;
   margin: 30px;
 }
 
-.receipelst {
+.recipelst {
   line-height: 30px;
 }
