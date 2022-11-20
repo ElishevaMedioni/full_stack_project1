@@ -14,10 +14,11 @@ h1 {
 body {
   background-color: #dacde4;
   font-family: 'Space Mono', monospace;
-  margin-top: 0px; 
+  /* margin-top: 0px; 
   margin-bottom: 0px; 
   margin-left: 0px; 
-  margin-right: 0px;
+  margin-right: 0px; */
+  margin: 20px;
 }
 
 /* Navbar container */
@@ -37,27 +38,27 @@ body {
   text-decoration: none;
 }
 
-ul {
+.navbarul {
   list-style-type: none;
   margin: 15;
   padding: 0;
   overflow: hidden;
 }
 
-li {
+.navbarul li {
   float: left;
 }
 
-li a {
+.navbarul li a {
   display: block;
-  color: white;
+  /* color: white; */
   text-align: center;
   padding-right:  16px;
   padding-left: 16px;
   text-decoration: none;
 }
 
-li a:hover {
+.navbarul li a:hover {
   background-color: rgb(194, 184, 223);
 }
 
@@ -191,4 +192,21 @@ footer {
 }
 
 
+/* things elisheva added */
+.ingredientlst {
+  list-style-type: circle;
+  line-height: 40px;
+}
 
+article {
+  margin: 30px;
+}
+
+.listofreceipes {
+  color: white;
+  margin: 30px;
+}
+
+.receipelst {
+  line-height: 30px;
+}
