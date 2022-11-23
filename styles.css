@@ -7,11 +7,12 @@ h1 {
 body {
   background-color: #dacde4;
   font-family: 'Space Mono', monospace;
-  /* margin-top: 0px; 
-  margin-bottom: 0px; 
-  margin-left: 0px; 
-  margin-right: 0px; */
   margin: 20px;
+  
+}
+
+main {
+  text-align: center;
 }
 
 /* Navbar container */
@@ -47,7 +48,6 @@ body {
 
 .navbarul li a {
   display: block;
-  /* color: white; */
   text-align: center;
   padding-right:  16px;
   padding-left: 16px;
@@ -59,53 +59,7 @@ body {
   border-radius: 25px;
 }
 
-
-
-/* .grid-container {
-    display: grid;
-    grid-template-areas:
-      "starters dishes"
-      "desserts shabbat";
-    grid-gap: 10px;
-    padding: 10px; 
-  }
-
-  .starters {
-    grid-area: starters;
-    height: 300px;
-    width:400px;
-    max-width:300px;
-    max-height:400px;
-    background-size: cover;
-  }
-
-  .dishes {
-    grid-area: dishes;
-    height: auto;
-    width:auto;
-    max-width:300px;
-    max-height:400px;
-    background-size: cover;
-  }
-
-  .desserts {
-    grid-area: desserts;
-    height: auto;
-    width:auto;
-    max-width:300px;
-    max-height:400px;
-    background-size: cover;
-  }
-
-  .shabbat {
-    grid-area: shabbat;
-    height: auto;
-    width:auto;
-    max-width:300px;
-    max-height:400px;
-    background-size: cover;
-  } */
-
+/* Flex box in the main page */
 .parent {
     display: flex;
     flex-wrap: wrap;
@@ -139,27 +93,22 @@ figure {
 
 
 footer{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  
-  height: auto;
-  width: 100vw;
-  padding-top: 40px;
-  padding-left: 10px;
-  color: #fff;
+  margin-top: auto;
 }
 
 .recipeimg{
   width:230px;
   height: 230px;
   border-radius: 25px;
+  transition: transform .2s; /* Animation */
 }
 
-/* things elisheva added */
+.recipeimg:hover {
+  transform: scale(1.5);
+}
+
 .ingredientlst {
-  list-style-type: circle;
+  list-style-type: none;
   line-height: 40px;
 }
 
@@ -170,12 +119,15 @@ article {
 .listofrecipes {
   color: white;
   margin: 30px;
+  list-style-type: none;
 }
 
 .recipelst {
   line-height: 30px;
+  list-style-type: none;
 }
 
+/* about page styles */
 table {
   border: none;
   border-collapse: collapse;
@@ -192,6 +144,15 @@ padding: 8px;
   width: 300px;
   height: 300px; 
   border-radius: 25px;
+}
+
+.aboutp {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 /* style for the contact form */
@@ -309,3 +270,19 @@ padding: 8px;
   }
 }
 
+/* style for the gallery page */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  padding: 20px;
+}
+.grid-item img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 25px;
+}
